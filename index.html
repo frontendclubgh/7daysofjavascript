@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="7 dias aprendiendo JavaScript desde cero.">
+    <meta name="keywords" content="javascript, retos, frontend">
+    <meta name="author" content="Frontend Club">
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons/css/flag-icons.min.css" />
+
+    <title>Frontend Club - 7 Days Of JS</title>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- BARRA DE NAVEGACION -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+            <!-- Brand name -->
+            <a class="navbar-brand" href="#">
+                <img src="assets/images/logo.png" alt="logo frontend club" style="width: 50px;" class="rounded-pill">
+            </a>
+            <!-- Button mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navigation links -->
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" role="button"
+                        href="#" data-bs-toggle="dropdown">Challenges</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Java</a></li>
+                        <li><a class="dropdown-item" href="#">Python</a></li>
+                        <li><a class="dropdown-item" href="#">JavaScript</a></li>
+                    </ul>
+                    </li>
+                    <a class="nav-link" href="https://frontend-club.hashnode.dev/">Blog</a>
+                    <a class="nav-link" href="#">Recursos</a>
+                    <a class="nav-link" href="#">Souveniers</a> -->
+
+                    <!-- Botón CTA -->
+                    <a href="https://frontendclub.kit.com/7-days-of-javascript" target="_blank" class="btn btn-primary ms-lg-3">
+                        Unirme
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- TITULO -->
+    <section class="py-5 text-center">
+        <div class="container">
+            <h1 class="fw-bold fs-3 mb-2">7 Days Of JavaScript</h1>
+            <p class="text-muted mb-0">Entrena JavaScript durante 7 días aplicando la Ley de Pareto:
+enfócate en el 20% que te da el 80% de los resultados.</p>
+            <p class="text-muted mb-0"><span class="fw-bold">Si estás aquí, no estás empezando: ya estás
+                    avanzando.</span></p>
+        </div>
+    </section>
+
+
+    <!-- SECCION GRID DE ESTUDIANTES -->
+    <main class="container pb-5 flex-fill">
+        <div class="students-wall d-grid">
+            <!-- Alumno con reto completado -->
+            <div class="student-box completed bg-success" role="button" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="Ryan Blake">
+                <button class="student-trigger" type="button" data-bs-toggle="modal" data-bs-target="#studentModal"
+                    data-name="Ryan Blake" data-role="Frontend Developer"
+                    data-avatar="https://github.com/imryanblake.png" data-github="https://github.com/imryanblake.png"
+                    data-linkedin="#" data-codepen="#"></button>
+            </div>
+
+            <!-- Alumno con otro reto -->
+            <div class="student-box completed bg-success" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="Carlos Pérez">
+            </div>
+
+            <!-- Alumno bloqueado -->
+            <div class="student-box completed bg-warning" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="Juan Peréz">
+            </div>
+
+            <div class="student-box completed bg-danger" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="Ana Tirado">
+            </div>
+            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
+            </div>
+            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
+            </div>
+            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
+            </div>
+            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
+            </div>
+            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
+            </div>
+            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
+            </div>
+            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
+            </div>
+            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
+            </div>
+            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
+            </div>
+            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
+            </div>
+            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
+            </div>
+            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
+            </div>
+            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
+            </div>
+            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
+            </div>
+            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
+            </div>
+            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
+            </div>
+            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
+            </div>
+            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
+            </div>
+            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
+            </div>
+            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
+            </div>
+            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
+            </div>
+            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
+            </div>
+            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
+            </div>
+            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
+            </div>
+            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
+            </div>
+            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
+            </div>
+            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
+            </div>
+            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
+            </div>
+            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
+            </div>
+            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
+            </div>
+            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
+            </div>
+            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
+            </div>
+            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
+            </div>
+            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
+            </div>
+            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
+            </div>
+            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
+            </div>
+            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
+            </div>
+            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
+            </div>
+            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
+            </div>
+            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
+            </div>
+            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
+            </div>
+            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
+            </div>
+            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
+            </div>
+            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
+            </div>
+            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
+            </div>
+            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
+            </div>
+            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
+            </div>
+            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
+            </div>
+            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
+            </div>
+            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
+            </div>
+            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
+            </div>
+            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
+            </div>
+            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
+            </div>
+            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
+            </div>
+            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
+            </div>
+            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
+            </div>
+            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
+            </div>
+            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
+            </div>
+            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
+            </div>
+            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
+            </div>
+            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
+            </div>
+            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
+            </div>
+            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
+            </div>
+            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
+            </div>
+            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
+            </div>
+            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
+            </div>
+            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
+            </div>
+            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
+            </div>
+            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
+            </div>
+            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
+            </div>
+            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
+            </div>
+            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
+            </div>
+            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
+            </div>
+            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
+            </div>
+            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
+            </div>
+            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
+            </div>
+            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
+            </div>
+            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
+            </div>
+            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
+            </div>
+            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
+            </div>
+            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
+            </div>
+            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
+            </div>
+
+            <!-- Duplica según estudiantes -->
+        </div>
+
+    </main>
+
+
+    <!-- SECCION ESTADISTICAS -->
+    <section class="container py-5">
+        <div class="row g-4">
+
+            <!-- Card 1: Estudiantes activos -->
+            <div class="col-12 col-md-4">
+                <div class="card h-100 bg-dark text-light shadow-sm">
+                    <div class="card-body">
+                        <p class="text-muted mb-1">Estudiantes activos</p>
+                        <h2 class="fw-bold text-primary mb-2">5</h2>
+                        <p class="small text-muted mb-3">
+                            Personas que decidieron entrenar en serio.
+                        </p>
+                        <div class="progress" style="height: 6px;">
+                            <div class="progress-bar bg-primary" style="width: 72%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2: Proyectos construidos -->
+            <div class="col-12 col-md-4">
+                <div class="card h-100 bg-dark text-light shadow-sm">
+                    <div class="card-body">
+                        <p class="text-muted mb-1">Tareas completadas</p>
+                        <h2 class="fw-bold text-success mb-2">25</h2>
+                        <p class="small text-muted mb-0">
+                            Ejercicios practicados y enviados para revisión.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3: Países representados -->
+            <div class="col-12 col-md-4">
+                <div class="card h-100 bg-dark text-light shadow-sm">
+                    <div class="card-body">
+                        <p class="text-muted mb-1">Países representados</p>
+                        <h2 class="fw-bold text-warning mb-2">3</h2>
+                        <p class="small text-muted mb-0">
+                            La comunidad crece. El movimiento se expande.
+                        </p>
+                        <p class="mb-1 d-flex align-items-center gap-2">
+                            <!-- <span class="fi fi-ar"></span> -->
+                            <span class="fi fi-bo"></span>
+                            <!-- <span class="fi fi-co"></span> -->
+                            <!-- <span class="fi fi-ec"></span> -->
+                            <span class="fi fi-mx"></span>
+                            <!-- <span class="fi fi-pe"></span> -->
+                            <!-- <span class="fi fi-do"></span> -->
+                            <span class="fi fi-ve"></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- SECCION COMO FUNCIONA -->
+    <section class="container py-5">
+        <div class="row mb-5">
+            <div class="col text-center">
+                <h2 class="fw-bold mb-2">¿Cómo funciona el reto?</h2>
+                <p class="text-muted mb-0">
+                    Practicar todos los días no es motivación.
+                    <br class="d-none d-md-block">
+                    <span class="fw-semibold">Aquí es el sistema.</span>
+                </p>
+            </div>
+        </div>
+
+        <div class="row align-items-center g-4">
+            <!-- Steps -->
+            <div class="col-12 col-lg-6">
+
+                <!-- Step 1 -->
+                <div class="d-flex gap-3 p-3 rounded bg-primary bg-opacity-10 mb-3">
+                    <div>
+                        <span class="badge rounded-pill bg-primary fs-6">1</span>
+                    </div>
+                    <div>
+                        <h5 class="fw-semibold mb-1">Tema del día</h5>
+                        <p class="text-muted small mb-0">
+                            Selecciona un reto real según tu nivel y empieza hoy mismo.
+                            No necesitas esperar “estar listo”.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="d-flex gap-3 p-3 rounded bg-dark border mb-3">
+                    <div>
+                        <span class="badge rounded-pill bg-secondary fs-6">2</span>
+                    </div>
+                    <div>
+                        <h5 class="fw-semibold mb-1">Practica</h5>
+                        <p class="text-muted small mb-0">
+                            Practica el ejercicio que te dejamos dentro del tema del día.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="d-flex gap-3 p-3 rounded bg-dark border mb-3">
+                    <div>
+                        <span class="badge rounded-pill bg-secondary fs-6">3</span>
+                    </div>
+                    <div>
+                        <h5 class="fw-semibold mb-1">Envía</h5>
+                        <p class="text-muted small mb-0">
+                            Envía tu solución para recibir feedback de los mentores y mejorar tu código.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="d-flex gap-3 p-3 rounded bg-dark border">
+                    <div>
+                        <span class="badge rounded-pill bg-secondary fs-6">4</span>
+                    </div>
+                    <div>
+                        <h5 class="fw-semibold mb-1">Comunidad</h5>
+                        <p class="text-muted small mb-0">
+                            Comparte tu solución con la comunidad, recibe feedback y aprende de otros estudiantes.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- CTA -->
+                <div class="mt-4">
+                    <!-- Botón CTA -->
+                    <a href="https://frontendclub.kit.com/7-days-of-javascript" target="_blank" class="btn btn-primary btn-lg">
+                        Unirme al reto 🚀
+                    </a>
+                    <p class="text-muted small mt-2 mb-0">
+                        Practica hoy. Tu progreso empieza ahora.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Visual / Placeholder -->
+            <div class="col-12 col-lg-6 text-center align-self-start">
+                <div class="bg-dark border rounded p-4">
+                    <img src="assets/images/design.png" alt="Ejemplos de retos Frontend Club"
+                        class="img-fluid rounded w-100" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- VENTANA MODAL GRID -->
+    <div class="modal fade" id="studentModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-center">
+                <!-- Header con X en la esquina superior derecha -->
+                <div class="modal-header border-0">
+                    <button type="button" class="btn-close ms-auto" data-bs-dismiss="modal" aria-label="Cerrar">
+                    </button>
+                </div>
+                <div class="modal-body p-4">
+
+                    <img id="modalAvatar" class="rounded-circle mb-3" width="120" height="120" alt="Avatar" />
+
+                    <h5 id="modalName" class="mb-1"></h5>
+                    <p id="modalRole" class="text-muted small"></p>
+
+                    <span class="badge bg-success mb-3">Activo</span>
+
+                    <div class="d-flex justify-content-center gap-3 mt-3">
+                        <a id="modalGithub" href="#" target="_blank">GitHub</a>
+                        <a id="modalLinkedin" href="#" target="_blank">LinkedIn</a>
+                        <a id="modalCodepen" href="#" target="_blank">Codepen</a>
+                    </div>
+
+                    <button type="button" class="btn btn-outline-secondary mt-4" data-bs-dismiss="modal">
+                        Cerrar
+                    </button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- PIE DE PAGINA -->
+    <footer class="text-center py-4 text-muted small">©2026 Frontend Club. Todos los derechos reservados.</footer>
+
+
+    <!-- KIT FORM -->
+    <script async data-uid="c5686d9866" src="https://frontendclub.kit.com/c5686d9866/index.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

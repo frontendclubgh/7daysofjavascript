@@ -1,0 +1,71 @@
+/* Grid */
+.students-wall {
+  grid-template-columns: repeat(auto-fill, minmax(20px, 1fr));
+  gap: 6px;
+}
+
+/* Base del cuadro */
+.student-box {
+  aspect-ratio: 1 / 1;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+/* Estado bloqueado */
+.student-box.locked {
+  background-color: #44526a;
+  opacity: 0.6;
+}
+
+/* Estado completado */
+.student-box.completed {
+  opacity: 0.9;
+}
+
+/* Hover */
+.student-box:hover {
+  transform: scale(1.25);
+  opacity: 1;
+  z-index: 5;
+}
+
+/* Tooltip oscuro */
+.tooltip-inner {
+  background-color: #1f2937;
+  color: #fff;
+  font-size: 0.75rem;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px dashed rgba(255, 255, 255, 0.25);
+}
+
+/* Flecha del tooltip */
+.tooltip.bs-tooltip-top .tooltip-arrow::before {
+  border-top-color: #1f2937;
+}
+
+.student-box {
+  position: relative;
+}
+
+.student-trigger {
+  position: absolute;
+  inset: 0;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+
+.btn-primary:hover {
+  background: #1d4ed8;
+}
+
+.btn-primary:active {
+  transform: scale(0.98);
+}
+
+.btn-primary:focus-visible {
+  outline: 3px solid #93c5fd;
+}

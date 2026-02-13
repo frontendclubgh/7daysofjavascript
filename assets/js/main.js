@@ -29,3 +29,36 @@ function initModal() {
     modalElements.codepen.href = trigger.dataset.codepen;
   });
 }
+
+
+// SUPABASE
+const { createClient } = supabase;
+
+const supabaseUrl = "https://qjrqiacdojojdubelete.supabase.co";
+  const supabaseKey = "sb_publishable_fDfSfs9LFoM79Wh_9j-vsg_b-1EyqeE";
+  const supabase = window.supabase.createClient(supabaseUrl, supabaseKey);
+
+  const form = document.querySelector("form");
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const challenge = document.getElementById("challenge").value;
+    const solution_url = document.getElementById("solution_url").value;
+
+    const { data, error } = await supabase
+      .from("exercises")
+      .insert([
+        { name, email, challenge, solution_url }
+      ]);
+
+    if (error) {
+      alert("Error al enviar la tarea.");
+      console.error(error);
+    } else {
+      alert("Tarea enviada correctamente 🚀");
+      form.reset();
+    }
+  });

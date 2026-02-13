@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="7 dias aprendiendo JavaScript desde cero.">
+    <meta name="keywords" content="javascript, retos, frontend">
+    <meta name="author" content="Frontend Club">
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons/css/flag-icons.min.css" />
+
+    <title>Frontend Club - 7 Days Of JS</title>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- BARRA DE NAVEGACION -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+            <!-- Brand name -->
+            <a class="navbar-brand" href="#">
+                <img src="assets/images/logo.png" alt="logo frontend club" style="width: 50px;" class="rounded-pill">
+            </a>
+            <!-- Button mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navigation links -->
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <!-- Botón CTA -->
+                    <a href="https://chat.whatsapp.com/DjtuOCCEkKy00FIFNEFzAr" target="_blank"
+                        class="btn btn-primary ms-lg-3">
+                        Ayuda
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <main class="container mt-5">
+        <section class="row justify-content-center">
+            <div class="col-md-6">
+                <h4 class="mb-2 text-center">Subir tarea – 7DaysOfJS</h4>
+                <p class="text-center text-muted mb-4">
+                    Completa la tarea del día y comparte el link de tu solución.
+                    Practicar todos los días es la clave 🚀
+                </p>
+                <form>
+                    <!-- Nombre -->
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="name" placeholder="Tu nombre" required>
+                    </div>
+
+                    <!-- Correo -->
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Correo</label>
+                        <input type="email" class="form-control" id="email" placeholder="tucorreo@email.com" required>
+                    </div>
+
+                    <!-- Día del reto -->
+                    <div class="mb-3">
+                        <label for="challenge" class="form-label">Día del reto</label>
+                        <select class="form-select" id="challenge" required>
+                            <option value="">Selecciona</option>
+                            <option>Día 1</option>
+                            <option>Día 2</option>
+                            <option>Día 3</option>
+                            <option>Día 4</option>
+                            <option>Día 5</option>
+                            <option>Día 6</option>
+                            <option>Día 7</option>
+                        </select>
+                    </div>
+
+                    <!-- Link de la tarea -->
+                    <div class="mb-4">
+                        <label for="solution_url" class="form-label">Link de tu solución</label>
+                        <input type="url" class="form-control" id="solution_url"
+                            placeholder="GitHub Gist o editor de código en línea" required>
+                    </div>
+
+                    <!-- Botón -->
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary">
+                            Enviar tarea
+                        </button>
+                    </div>
+                </form>
+
+            </div>
+        </section>
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="text-center py-4 text-muted small">©2026 Frontend Club. Todos los derechos reservados.</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>F
+    <script src="./assets/js/main.js"></script>
+
+</body>
+
+</html>

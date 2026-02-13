@@ -4,7 +4,6 @@ initModal();
 // ====== FUNCTIONS ======
 function initModal() {}
 
-
 const modalElements = {
   name: document.getElementById("modalName"),
   role: document.getElementById("modalRole"),
@@ -30,35 +29,35 @@ function initModal() {
   });
 }
 
-
 // SUPABASE
 const { createClient } = supabase;
 
 const supabaseUrl = "https://qjrqiacdojojdubelete.supabase.co";
-  const supabaseKey = "sb_publishable_fDfSfs9LFoM79Wh_9j-vsg_b-1EyqeE";
-  const supabase = window.supabase.createClient(supabaseUrl, supabaseKey);
+const supabaseKey = "sb_publishable_fDfSfs9LFoM79Wh_9j-vsg_b-1EyqeE";
 
-  const form = document.querySelector("form");
+const client = createClient(supabaseUrl, supabaseKey);
 
-  form.addEventListener("submit", async (e) => {
-    e.preventDefault();
+const form = document.querySelector("form");
 
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const challenge = document.getElementById("challenge").value;
-    const solution_url = document.getElementById("solution_url").value;
+form.addEventListener("submit", async (e) => {
+  e.preventDefault();
 
-    const { data, error } = await supabase
-      .from("exercises")
-      .insert([
-        { name, email, challenge, solution_url }
-      ]);
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const challenge = document.getElementById("challenge").value;
+  const solution_url = document.getElementById("solution_url").value;
 
-    if (error) {
-      alert("Error al enviar la tarea.");
-      console.error(error);
-    } else {
-      alert("Tarea enviada correctamente 🚀");
-      form.reset();
-    }
-  });
+  const { data, error } = await client
+    .from("exercises")
+    .insert([{ name, email, challenge, solution_url }]);
+
+  console.log("DATA:", data);
+  console.log("ERROR:", error);
+
+  if (error) {
+    alert("Error al enviar la tarea.");
+  } else {
+    alert("Tarea enviada correctamente 🚀");
+    form.reset();
+  }
+});

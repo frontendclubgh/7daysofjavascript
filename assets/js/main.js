@@ -1,0 +1,31 @@
+// ====== INIT ======
+initModal();
+
+// ====== FUNCTIONS ======
+function initModal() {}
+
+
+const modalElements = {
+  name: document.getElementById("modalName"),
+  role: document.getElementById("modalRole"),
+  avatar: document.getElementById("modalAvatar"),
+  github: document.getElementById("modalGithub"),
+  linkedin: document.getElementById("modalLinkedin"),
+  codepen: document.getElementById("modalCodepen"),
+};
+
+function initModal() {
+  const modal = document.getElementById("studentModal");
+  if (!modal) return;
+
+  modal.addEventListener("show.bs.modal", (event) => {
+    const trigger = event.relatedTarget;
+
+    modalElements.name.textContent = trigger.dataset.name;
+    modalElements.role.textContent = trigger.dataset.role;
+    modalElements.avatar.src = trigger.dataset.avatar;
+    modalElements.github.href = trigger.dataset.github;
+    modalElements.linkedin.href = trigger.dataset.linkedin;
+    modalElements.codepen.href = trigger.dataset.codepen;
+  });
+}

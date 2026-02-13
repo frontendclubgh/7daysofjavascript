@@ -33,21 +33,9 @@
             <!-- Navigation links -->
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ms-auto">
-                    <!-- <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" role="button"
-                        href="#" data-bs-toggle="dropdown">Challenges</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Java</a></li>
-                        <li><a class="dropdown-item" href="#">Python</a></li>
-                        <li><a class="dropdown-item" href="#">JavaScript</a></li>
-                    </ul>
-                    </li>
-                    <a class="nav-link" href="https://frontend-club.hashnode.dev/">Blog</a>
-                    <a class="nav-link" href="#">Recursos</a>
-                    <a class="nav-link" href="#">Souveniers</a> -->
-
                     <!-- Botón CTA -->
-                    <a href="https://frontendclub.kit.com/7-days-of-javascript" target="_blank" class="btn btn-primary ms-lg-3">
+                    <a href="https://frontendclub.kit.com/7-days-of-javascript" target="_blank"
+                        class="btn btn-primary ms-lg-3">
                         Unirme
                     </a>
                 </div>
@@ -55,20 +43,18 @@
         </div>
     </nav>
 
-
     <!-- TITULO -->
     <section class="py-5 text-center">
         <div class="container">
             <h1 class="fw-bold fs-3 mb-2">7 Days Of JavaScript</h1>
             <p class="text-muted mb-0">Entrena JavaScript durante 7 días aplicando la Ley de Pareto:
-enfócate en el 20% que te da el 80% de los resultados.</p>
+                enfocado en el 20% que te da el 80% de los resultados.</p>
             <p class="text-muted mb-0"><span class="fw-bold">Si estás aquí, no estás empezando: ya estás
                     avanzando.</span></p>
         </div>
     </section>
 
-
-    <!-- SECCION GRID DE ESTUDIANTES -->
+    <!-- GRID ESTUDIANTES -->
     <main class="container pb-5 flex-fill">
         <div class="students-wall d-grid">
             <!-- Alumno con reto completado -->
@@ -79,32 +65,7 @@ enfócate en el 20% que te da el 80% de los resultados.</p>
                     data-avatar="https://github.com/imryanblake.png" data-github="https://github.com/imryanblake.png"
                     data-linkedin="#" data-codepen="#"></button>
             </div>
-
-            <!-- Alumno con otro reto -->
-            <div class="student-box completed bg-success" data-bs-toggle="tooltip" data-bs-placement="top"
-                title="Carlos Pérez">
-            </div>
-
             <!-- Alumno bloqueado -->
-            <div class="student-box completed bg-warning" data-bs-toggle="tooltip" data-bs-placement="top"
-                title="Juan Peréz">
-            </div>
-
-            <div class="student-box completed bg-danger" data-bs-toggle="tooltip" data-bs-placement="top"
-                title="Ana Tirado">
-            </div>
-            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
-            </div>
-            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
-            </div>
-            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
-            </div>
-            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
-            </div>
-            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
-            </div>
-            <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
-            </div>
             <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
             </div>
             <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
@@ -257,46 +218,66 @@ enfócate en el 20% que te da el 80% de los resultados.</p>
             </div>
             <div class="student-box locked" data-bs-toggle="tooltip" data-bs-placement="top" title="Disponible">
             </div>
-
-            <!-- Duplica según estudiantes -->
         </div>
-
     </main>
 
+    <!-- MODAL GRID -->
+    <div class="modal fade" id="studentModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-center">
+                <!-- Header con X en la esquina superior derecha -->
+                <div class="modal-header border-0">
+                    <button type="button" class="btn-close ms-auto" data-bs-dismiss="modal" aria-label="Cerrar">
+                    </button>
+                </div>
+                <div class="modal-body p-4">
+                    <img id="modalAvatar" class="rounded-circle mb-3" width="120" height="120" alt="Avatar" />
+                    <h5 id="modalName" class="mb-1"></h5>
+                    <p id="modalRole" class="text-muted small"></p>
+                    <span class="badge bg-success mb-3">7daysofjs</span>
+                    <div class="d-flex justify-content-center gap-3 mt-3">
+                        <a id="modalGithub" href="#" target="_blank">GitHub</a>
+                        <a id="modalLinkedin" href="#" target="_blank">LinkedIn</a>
+                        <a id="modalCodepen" href="#" target="_blank">Codepen</a>
+                    </div>
+                    <button type="button" class="btn btn-outline-secondary mt-4" data-bs-dismiss="modal">
+                        Cerrar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <!-- SECCION ESTADISTICAS -->
+    <!-- ESTADISTICAS -->
     <section class="container py-5">
         <div class="row g-4">
-
             <!-- Card 1: Estudiantes activos -->
             <div class="col-12 col-md-4">
                 <div class="card h-100 bg-dark text-light shadow-sm">
                     <div class="card-body">
                         <p class="text-muted mb-1">Estudiantes activos</p>
-                        <h2 class="fw-bold text-primary mb-2">5</h2>
+                        <h2 class="fw-bold text-success mb-2">1</h2>
                         <p class="small text-muted mb-3">
-                            Personas que decidieron entrenar en serio.
+                            Personas que decidieron completar el reto.
                         </p>
                         <div class="progress" style="height: 6px;">
-                            <div class="progress-bar bg-primary" style="width: 72%;"></div>
+                            <div class="progress-bar bg-success" style="width: 10%;"></div>
                         </div>
                     </div>
                 </div>
             </div>
-
             <!-- Card 2: Proyectos construidos -->
             <div class="col-12 col-md-4">
                 <div class="card h-100 bg-dark text-light shadow-sm">
                     <div class="card-body">
                         <p class="text-muted mb-1">Tareas completadas</p>
-                        <h2 class="fw-bold text-success mb-2">25</h2>
+                        <h2 class="fw-bold text-primary mb-2">25</h2>
                         <p class="small text-muted mb-0">
                             Ejercicios practicados y enviados para revisión.
                         </p>
                     </div>
                 </div>
             </div>
-
             <!-- Card 3: Países representados -->
             <div class="col-12 col-md-4">
                 <div class="card h-100 bg-dark text-light shadow-sm">
@@ -319,12 +300,10 @@ enfócate en el 20% que te da el 80% de los resultados.</p>
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
 
-
-    <!-- SECCION COMO FUNCIONA -->
+    <!-- COMO FUNCIONA -->
     <section class="container py-5">
         <div class="row mb-5">
             <div class="col text-center">
@@ -349,8 +328,7 @@ enfócate en el 20% que te da el 80% de los resultados.</p>
                     <div>
                         <h5 class="fw-semibold mb-1">Tema del día</h5>
                         <p class="text-muted small mb-0">
-                            Selecciona un reto real según tu nivel y empieza hoy mismo.
-                            No necesitas esperar “estar listo”.
+                            Recibirás contenido diario con teoría y ejemplos para entender el concepto clave del día.
                         </p>
                     </div>
                 </div>
@@ -361,9 +339,9 @@ enfócate en el 20% que te da el 80% de los resultados.</p>
                         <span class="badge rounded-pill bg-secondary fs-6">2</span>
                     </div>
                     <div>
-                        <h5 class="fw-semibold mb-1">Practica</h5>
+                        <h5 class="fw-semibold mb-1">Practicar</h5>
                         <p class="text-muted small mb-0">
-                            Practica el ejercicio que te dejamos dentro del tema del día.
+                            Realiza el ejercicio aplicando lo aprendido, sin miedo a equivocarte. El error es parte del proceso.
                         </p>
                     </div>
                 </div>
@@ -374,9 +352,9 @@ enfócate en el 20% que te da el 80% de los resultados.</p>
                         <span class="badge rounded-pill bg-secondary fs-6">3</span>
                     </div>
                     <div>
-                        <h5 class="fw-semibold mb-1">Envía</h5>
+                        <h5 class="fw-semibold mb-1">Envíar</h5>
                         <p class="text-muted small mb-0">
-                            Envía tu solución para recibir feedback de los mentores y mejorar tu código.
+                            Envíanos tu solución para recibir feedback personalizado y mejorar cada día.
                         </p>
                     </div>
                 </div>
@@ -387,9 +365,9 @@ enfócate en el 20% que te da el 80% de los resultados.</p>
                         <span class="badge rounded-pill bg-secondary fs-6">4</span>
                     </div>
                     <div>
-                        <h5 class="fw-semibold mb-1">Comunidad</h5>
+                        <h5 class="fw-semibold mb-1">Compartir</h5>
                         <p class="text-muted small mb-0">
-                            Comparte tu solución con la comunidad, recibe feedback y aprende de otros estudiantes.
+                            Comparte la solución con la comunidad y celebra tu progreso. Inspira a otros a seguir tu camino.
                         </p>
                     </div>
                 </div>
@@ -397,7 +375,8 @@ enfócate en el 20% que te da el 80% de los resultados.</p>
                 <!-- CTA -->
                 <div class="mt-4">
                     <!-- Botón CTA -->
-                    <a href="https://frontendclub.kit.com/7-days-of-javascript" target="_blank" class="btn btn-primary btn-lg">
+                    <a href="https://frontendclub.kit.com/7-days-of-javascript" target="_blank"
+                        class="btn btn-primary btn-lg">
                         Unirme al reto 🚀
                     </a>
                     <p class="text-muted small mt-2 mb-0">
@@ -416,52 +395,13 @@ enfócate en el 20% que te da el 80% de los resultados.</p>
         </div>
     </section>
 
-
-    <!-- VENTANA MODAL GRID -->
-    <div class="modal fade" id="studentModal" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content text-center">
-                <!-- Header con X en la esquina superior derecha -->
-                <div class="modal-header border-0">
-                    <button type="button" class="btn-close ms-auto" data-bs-dismiss="modal" aria-label="Cerrar">
-                    </button>
-                </div>
-                <div class="modal-body p-4">
-
-                    <img id="modalAvatar" class="rounded-circle mb-3" width="120" height="120" alt="Avatar" />
-
-                    <h5 id="modalName" class="mb-1"></h5>
-                    <p id="modalRole" class="text-muted small"></p>
-
-                    <span class="badge bg-success mb-3">Activo</span>
-
-                    <div class="d-flex justify-content-center gap-3 mt-3">
-                        <a id="modalGithub" href="#" target="_blank">GitHub</a>
-                        <a id="modalLinkedin" href="#" target="_blank">LinkedIn</a>
-                        <a id="modalCodepen" href="#" target="_blank">Codepen</a>
-                    </div>
-
-                    <button type="button" class="btn btn-outline-secondary mt-4" data-bs-dismiss="modal">
-                        Cerrar
-                    </button>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- PIE DE PAGINA -->
+    <!-- FOOTER -->
     <footer class="text-center py-4 text-muted small">©2026 Frontend Club. Todos los derechos reservados.</footer>
-
-
-    <!-- KIT FORM -->
-    <script async data-uid="c5686d9866" src="https://frontendclub.kit.com/c5686d9866/index.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="./assets/js/main.js"></script>
 
 </body>
 
